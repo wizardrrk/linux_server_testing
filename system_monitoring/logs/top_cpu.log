@@ -1,0 +1,55 @@
+==== Sun Jan  4 16:18:01 UTC 2026 ====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        7401  1.0  0.5 370072 20096 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+root           1  0.0  0.3  21808 12748 ?        Ss   08:56   0:04 /sbin/init
+root         111  0.0  0.1  25268  6272 ?        Ss   08:56   0:04 /usr/lib/systemd/systemd-udevd
+root         396  0.0  0.0   3140  1160 ?        S    08:56   0:03 /init
+root          58  0.0  0.4  50484 17536 ?        S<s  08:56   0:03 /usr/lib/systemd/systemd-journald
+wizardr+     398  0.0  0.1   6336  5376 pts/0    Ss+  08:56   0:03 -bash
+root         246  0.0  0.3 2052432 14096 ?       Ssl  08:56   0:01 /usr/libexec/wsl-pro-service -vv
+syslog       262  0.0  0.1 222508  5504 ?        Ssl  08:56   0:00 /usr/sbin/rsyslogd -n -iNONE
+message+     210  0.0  0.1   9580  4736 ?        Ss   08:56   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+==== Sun Jan  4 16:19:01 UTC 2026 ====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+wizardr+    7500  100  0.1   8280  3968 ?        R    16:19   0:00 /bin/ps aux --sort=-%cpu
+root        7401  0.1  0.5 370072 20224 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+root           1  0.0  0.3  21808 12748 ?        Ss   08:56   0:04 /sbin/init
+root         111  0.0  0.1  25268  6272 ?        Ss   08:56   0:04 /usr/lib/systemd/systemd-udevd
+root         396  0.0  0.0   3140  1160 ?        S    08:56   0:03 /init
+root          58  0.0  0.4  50484 17536 ?        S<s  08:56   0:03 /usr/lib/systemd/systemd-journald
+wizardr+     398  0.0  0.1   6336  5376 pts/0    Ss+  08:56   0:03 -bash
+root         246  0.0  0.3 2052432 14096 ?       Ssl  08:56   0:01 /usr/libexec/wsl-pro-service -vv
+syslog       262  0.0  0.1 222508  5504 ?        Ssl  08:56   0:00 /usr/sbin/rsyslogd -n -iNONE
+==== Sun Jan  4 16:20:01 UTC 2026 ====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        7401  0.0  0.5 370072 20224 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+root           1  0.0  0.3  21808 12748 ?        Ss   08:56   0:04 /sbin/init
+root         111  0.0  0.1  25268  6272 ?        Ss   08:56   0:04 /usr/lib/systemd/systemd-udevd
+root         396  0.0  0.0   3140  1160 ?        S    08:56   0:03 /init
+root          58  0.0  0.4  50484 17536 ?        S<s  08:56   0:03 /usr/lib/systemd/systemd-journald
+wizardr+     398  0.0  0.1   6336  5376 pts/0    Ss+  08:56   0:03 -bash
+root         246  0.0  0.3 2052432 14096 ?       Ssl  08:56   0:01 /usr/libexec/wsl-pro-service -vv
+syslog       262  0.0  0.1 222508  5504 ?        Ssl  08:56   0:00 /usr/sbin/rsyslogd -n -iNONE
+message+     210  0.0  0.1   9580  4736 ?        Ss   08:56   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+==== Sun Jan  4 16:21:01 UTC 2026 ====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        7401  0.0  0.5 370072 20224 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+wizardr+    7550  0.0  0.0   6144  1668 pts/0    S    16:20   0:00 nmon -f -s 60 -c 60
+root           1  0.0  0.3  21808 12748 ?        Ss   08:56   0:04 /sbin/init
+root         111  0.0  0.1  25268  6272 ?        Ss   08:56   0:04 /usr/lib/systemd/systemd-udevd
+root         396  0.0  0.0   3140  1160 ?        S    08:56   0:03 /init
+root          58  0.0  0.4  50484 17536 ?        S<s  08:56   0:03 /usr/lib/systemd/systemd-journald
+wizardr+     398  0.0  0.1   6336  5376 pts/0    Ss+  08:56   0:03 -bash
+root         246  0.0  0.3 2052432 14096 ?       Ssl  08:56   0:01 /usr/libexec/wsl-pro-service -vv
+syslog       262  0.0  0.1 222508  5504 ?        Ssl  08:56   0:00 /usr/sbin/rsyslogd -n -iNONE
+==== Sun Jan  4 16:22:01 UTC 2026 ====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        7401  0.0  0.5 370072 20224 ?        Ssl  16:17   0:00 /usr/libexec/packagekitd
+root           1  0.0  0.3  21808 12748 ?        Ss   08:56   0:04 /sbin/init
+root         111  0.0  0.1  25268  6272 ?        Ss   08:56   0:04 /usr/lib/systemd/systemd-udevd
+root         396  0.0  0.0   3140  1160 ?        S    08:56   0:03 /init
+root          58  0.0  0.4  50484 17536 ?        S<s  08:56   0:03 /usr/lib/systemd/systemd-journald
+wizardr+     398  0.0  0.1   6336  5376 pts/0    Ss+  08:56   0:03 -bash
+root         246  0.0  0.3 2052432 14096 ?       Ssl  08:56   0:01 /usr/libexec/wsl-pro-service -vv
+syslog       262  0.0  0.1 222508  5504 ?        Ssl  08:56   0:00 /usr/sbin/rsyslogd -n -iNONE
+message+     210  0.0  0.1   9580  4736 ?        Ss   08:56   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
