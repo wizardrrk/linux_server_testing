@@ -298,7 +298,7 @@ Set up **automated backups** for Apache and Nginx web servers with:
 
 ---
 
-### 2. Create Backup Script
+### 2. Create Backup Script and give execute permission
 File: `/usr/local/bin/web_backup.sh`
 
 ```bash
@@ -322,6 +322,10 @@ tar -tzf $BACKUP_DIR/apache_${TIMESTAMP}.tar.gz > /var/log/web_backup.log 2>&1
 tar -tzf $BACKUP_DIR/nginx_${TIMESTAMP}.tar.gz >> /var/log/web_backup.log 2>&1
 
 echo "Backup completed at $(date)" >> /var/log/web_backup.log
+```
+### give execute permission
+```bash
+sudo chmod +x /usr/local/bin/web_backup.sh
 ```
 
 - **Naming convention:**  
