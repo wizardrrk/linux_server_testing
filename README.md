@@ -161,6 +161,114 @@ Run it with:
 bash setup_monitoring.sh
 ```
 
+
+
+# TASK 2
+
+---
+```markdown
+# 🛡️ User Management and Access Control
+
+This repository documents the setup of **user accounts and secure access controls** for new developers on a Linux system.  
+The goal is to ensure isolated workspaces, proper password management, and compliance with security policies.
+
 ---
 
+## 📋 Scenario
+
+Two new developers require system access:
+
+- **Sarah** → `/home/Sarah/workspace`
+- **Mike** → `/home/mike/workspace`
+
+Each developer must have:
+- A dedicated working directory
+- Restricted access (only the owner can read/write/execute)
+- Secure password policies (expiration + complexity)
+
+---
+
+## ⚙️ Steps Implemented
+
+### 1. Create User Accounts
+```bash
+sudo adduser Sarah
+sudo adduser mike
+```
+- Secure passwords set during account creation.
+
+---
+
+### 2. Create Dedicated Workspaces
+```bash
+sudo mkdir -p /home/Sarah/workspace
+sudo mkdir -p /home/mike/workspace
+```
+
+---
+
+### 3. Set Ownership and Permissions
+```bash
+sudo chown Sarah:Sarah /home/Sarah/workspace
+sudo chmod 700 /home/Sarah/workspace
+
+sudo chown mike:mike /home/mike/workspace
+sudo chmod 700 /home/mike/workspace
+```
+- `chmod 700` → Only the owner has full access.
+
+---
+
+### 4. Enforce Password Policy
+
+#### Expiration (30 days)
+```bash
+sudo chage -M 30 Sarah
+sudo chage -M 30 mike
+```
+
+#### Complexity Rules
+Edit `/etc/pam.d/common-password`:
+```
+password requisite pam_pwquality.so retry=3 minlen=12 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1
+```
+
+- Minimum length: 12 characters  
+- At least one uppercase, lowercase, digit, and special character  
+
+---
+
+### 5. Verification
+
+Check directory permissions:
+```bash
+ls -ld /home/*/workspace
+```
+
+Check password policy:
+```bash
+sudo chage -l Sarah
+sudo chage -l mike
+```
+
+---
+
+## ✅ Summary
+
+- **Users created:** Sarah & Mike  
+- **Directories:** `/home/Sarah/workspace`, `/home/mike/workspace`  
+- **Access control:** Owner-only permissions (`chmod 700`)  
+- **Password policy:** Expiration every 30 days + complexity enforced  
+
+---
+
+## 📖 Notes
+
+- This setup follows **principle of least privilege**.  
+- Future developers can be onboarded by repeating the same steps.  
+- For auditing, consider enabling **system logging** and **monitoring tools**.
+
+```
+
+---
 
